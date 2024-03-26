@@ -1,5 +1,5 @@
 import PokemonCard from "./components/PokemonCard";
-import React from 'react';
+import react from 'react';
 
 function App() {
   return (
