@@ -1,5 +1,6 @@
-import PokemonCard from "./components/PokemonCard";
 import react from 'react';
+import PokemonCard from "./components/PokemonCard";
+
 
 function App() {
   const pokemonList = [
@@ -15,7 +16,9 @@ function App() {
 
   return (
     <div>
-      <PokemonCard pokemon={pokemonList[0]} />
+      {pokemonList.map((pokemon, index)=> (
+        <PokemonCard key={index} pokemon={pokemon}/>
+      ))}
     </div>
   );
   
